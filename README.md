@@ -24,6 +24,7 @@ https://github.com/KaarinGaming/PlatformerTutorial/tree/ep_24/PlatformerTutorial
 
 
 ## Steps to Build your Project:
+<pre>
 To import this project to IntelliJ IDEA there are various ways you could clone the repository. One way 
 is to download the zip from the repository link for the game and then extract files from that zip on 
 your device and then inside IntelliJ select File-> open folder and select the folder of the game. 
@@ -48,6 +49,7 @@ terminal by right clicking on your desktop main screen and selecting open in ter
 there if the file is not within a folder. Ensure the terminal is in the desktop directory and if it is run 
 the command “java -jar jarfilename” 
 Once that is done the game should run and is ready to be played
+</pre>
  
 ## Steps to run your Project:
 =======
@@ -71,6 +73,7 @@ To run the project, you can follow these steps:
 # Class Descriptions: 
 
 ## Entities package: 
+<pre>
 Enemy class: This class is a subclass of the Entity class which handles various logic of a 
 given enemy. Such as the ai to see if the enemy can see the player. Setting up the 
 animations for each enemy. And to be a parent of each other enemy character class we will 
@@ -85,18 +88,24 @@ Player class: The player class handles all the necessary elements that would mak
 playable character do what they intend to such as having inputs to display diƯerent
 animations. A method that updates the player’s position relative to the screen and level 
 data. A hitbox that tells us if the character is above a tile, on a tile or hitting a tile. 
+</pre>
 ## Inputs package: 
+<pre>
 KeyBoardIInputs class: This is the class that tells the system if we are in each state of the 
 game if these keys should be able to input information to our game. If we are in a given state 
 specified such as playing, then movement of the character will be displayed. 
 MouseInputs class: This will handle the mouseinputs used such as through the various UI 
 elements found through the game. 
+</pre>
 ## Levels package: 
+<pre>
 Level class: This class handles the information that is for each level within the level data 
 array. It loads resources such as objects, tiles, props, and characters to the screen. 
 LevelManager class: Defines the levels and the data to be stored for each level. With this we 
 can set diƯerent values for each of the specified color items in the level image files. 
+</pre>
 # Main package: 
+<pre>
 Main class: This class runs the game class. 
 Game class: Runs the program and initializes the various updates and frames that the 
 application will call. 
@@ -105,19 +114,25 @@ checked. And is where we will display the updates and paint components to.
 GameWindow class: Is the class for defining the JFRAME 
 Sound class: Is the class that handles all sounds and sets diƯerent methods such as 
 initializing when we want to play a given sound. Or if we want the song to loop or stop. 
+</pre>
 # Object package: 
+<pre>
 GameObject class: Is the super class for the objects that I would place in the game that are 
 either traps or items that have an eƯect.
 ObjectManager class: Handles drawing the specified objects to the screen and where they 
 should be located within the given level. 
-Spikes class: This class draws and defines an trap that will kill the player if they fall on them. 
+Spikes class: This class draws and defines an trap that will kill the player if they fall on them.
+</pre> 
 # Props package: 
+<pre>
 Prop class: This was to be used as a super class to the various props that I wanted to add to 
 the background like trees and ladders. 
 PropManager class: Would handle things similarly to my other manager class where it 
 would load the given information to the screen by the given color I would choose within the 
 image file. 
+</pre>
 # States package: 
+<pre>
 GameState enum: This defines the constant states that the game application will have such 
 as playing, menu, options and quit. 
 GameStateMethods interface: Is the interface that describes the methods that each state 
@@ -128,8 +143,10 @@ OptionsMenu class: This is menu that will be displayed when clicking the options
 the main menu of the game. 
 Playing class: This is where the main action happens and where we draw the level data and 
 handle enemy and player actions. 
-State class: The parent class to all of the state classes. 
-# UI package: 
+State class: The parent class to all of the state classes.
+</pre> 
+# UI package:
+<pre> 
 functionButtons class: These are the buttons that will do diƯerent actions like return to the 
 home screen start the next level and restart the level. 
 GameOverLay class: This class draws the image to be displayed when the player dies. 
@@ -144,7 +161,9 @@ PauseUI class: Draws the various images and buttons when the player presses paus
 SoundButton class: In charge of methods for button the turns oƯ sound eƯects.
  
 VolumeButton class: Controls the eƯects of the slider and music controller. 
+</pre>
 # Utils package: 
+<pre>
 Constants class: This specifies the constant values used throughout the game such as 
 enemy state, player state, size of buttons and objects. It also handles setting constant 
 health values for enemies. 
@@ -157,3 +176,4 @@ image.
 UtilityTool class: reduces the file sizes to have better rendering times. Didn’t end up using 
 yet but was going to add it within to the setup method under the image within the try 
 statement. 
+</pre>
