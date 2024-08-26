@@ -1,5 +1,12 @@
 # SoulsVania
 
+## Project Overview: 
+For this project I was tasked with designing, building, and gathering resources necessary to create a 
+fully functional videogame. The task was to be done in java utilizing only the base java library. With this task we learned how to use various functions. How we can implement projects and maintain the code when working with multiple diƯerent classes and larger project sizes. 
+## Basic concept: 
+Soulsvania is a 2D platformer that tasks the player with eliminating all of the enemies on the screen and once that is done, they complete the level. There are three levels so far. The enemies have a very simple ai of when they see the player they all come to the player and attack. 
+
+
 
 ## Purpose of jar Folder 
 The jar folder will be used to store the built jar of your term-project.
