@@ -78,12 +78,15 @@ Enemy class: This class is a subclass of the Entity class which handles various 
 given enemy. Such as the ai to see if the enemy can see the player. Setting up the 
 animations for each enemy. And to be a parent of each other enemy character class we will 
 define. 
+
 Bringer class: This is the class for the enemy we will have throughout the game. This be 
 called inside of the enemy manager class to get the animations for this specific enemy type. 
+
 Enemy Manager class: Inside the enemy manager class it takes in the level data and 
 decides how many of a specific enemy type should be displayed within the level given the 
 current level. It draws them to the screen and handles various updates of animations to be 
 displayed and sets the attack and hitboxes for the given characters. 
+
 Player class: The player class handles all the necessary elements that would make a 
 playable character do what they intend to such as having inputs to display diƯerent
 animations. A method that updates the player’s position relative to the screen and level 
@@ -92,26 +95,31 @@ data. A hitbox that tells us if the character is above a tile, on a tile or hitt
 ## Inputs package: 
 <pre>
 KeyBoardIInputs class: This is the class that tells the system if we are in each state of the 
-game if these keys should be able to input information to our game. If we are in a given state 
-specified such as playing, then movement of the character will be displayed. 
+game if these keys should be able to input information to our game. If we are in a given state specified such as playing, then movement of the character will be displayed. 
+
 MouseInputs class: This will handle the mouseinputs used such as through the various UI 
 elements found through the game. 
 </pre>
 ## Levels package: 
 <pre>
 Level class: This class handles the information that is for each level within the level data 
-array. It loads resources such as objects, tiles, props, and characters to the screen. 
+array. It loads resources such as objects, tiles, props, and characters to the screen.
+
 LevelManager class: Defines the levels and the data to be stored for each level. With this we 
-can set diƯerent values for each of the specified color items in the level image files. 
+can set different values for each of the specified color items in the level image files. 
 </pre>
 # Main package: 
 <pre>
 Main class: This class runs the game class. 
+
 Game class: Runs the program and initializes the various updates and frames that the 
 application will call. 
+
 GamePanel class: Sets the size of the game panel. And is where the inputs are defined and 
 checked. And is where we will display the updates and paint components to. 
+
 GameWindow class: Is the class for defining the JFRAME 
+
 Sound class: Is the class that handles all sounds and sets diƯerent methods such as 
 initializing when we want to play a given sound. Or if we want the song to loop or stop. 
 </pre>
@@ -119,14 +127,17 @@ initializing when we want to play a given sound. Or if we want the song to loop 
 <pre>
 GameObject class: Is the super class for the objects that I would place in the game that are 
 either traps or items that have an eƯect.
+
 ObjectManager class: Handles drawing the specified objects to the screen and where they 
-should be located within the given level. 
+should be located within the given level.
+
 Spikes class: This class draws and defines an trap that will kill the player if they fall on them.
 </pre> 
 # Props package: 
 <pre>
 Prop class: This was to be used as a super class to the various props that I wanted to add to 
 the background like trees and ladders. 
+
 PropManager class: Would handle things similarly to my other manager class where it 
 would load the given information to the screen by the given color I would choose within the 
 image file. 
@@ -135,44 +146,62 @@ image file.
 <pre>
 GameState enum: This defines the constant states that the game application will have such 
 as playing, menu, options and quit. 
+
 GameStateMethods interface: Is the interface that describes the methods that each state 
 class will use. 
+
 Menu class: This is the title screen class that will display the opening menu along with the 
-buttons needed and the inputs that will be used. 
+buttons needed and the inputs that will be used.
+
 OptionsMenu class: This is menu that will be displayed when clicking the options button in 
 the main menu of the game. 
+
 Playing class: This is where the main action happens and where we draw the level data and 
 handle enemy and player actions. 
+
 State class: The parent class to all of the state classes.
 </pre> 
 # UI package:
 <pre> 
+
 functionButtons class: These are the buttons that will do diƯerent actions like return to the 
 home screen start the next level and restart the level. 
+
 GameOverLay class: This class draws the image to be displayed when the player dies. 
+
 LevelCompleteUI class: When the player eliminates all enemies display this level complete 
 UI to the gamepanel. 
+
 MenuButton class This is where I get the images for each item to be displayed in the menu 
 UI. 
+
 MusicSfxOptions: The options screen to be drawn that will use the SoundButton 
+
 Volumebutton to control the loudness or turn oƯ the sound eƯects of the game. 
+
 PauseButton: is a class that defines the bounds of the buttons in our pause ui/ 
-PauseUI class: Draws the various images and buttons when the player presses pause. 
+
+PauseUI class: Draws the various images and buttons when the player presses pause.
+ 
 SoundButton class: In charge of methods for button the turns oƯ sound eƯects.
  
 VolumeButton class: Controls the eƯects of the slider and music controller. 
 </pre>
 # Utils package: 
 <pre>
+
 Constants class: This specifies the constant values used throughout the game such as 
 enemy state, player state, size of buttons and objects. It also handles setting constant 
 health values for enemies. 
+
 HelperMethods: These helper methods handle collisions, get players starting point in the 
 game. As well as defining the actions enemies will take when seeing the player within a 
 certain point and tile location. 
+
 LoadSave class: this class sets up each of the images within the game to return a buƯered 
 image and reduce the amount of try and catch statements needed to type out for each 
 image. 
+
 UtilityTool class: reduces the file sizes to have better rendering times. Didn’t end up using 
 yet but was going to add it within to the setup method under the image within the try 
 statement. 
